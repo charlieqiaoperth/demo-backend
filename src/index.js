@@ -15,6 +15,7 @@ app.use(express.json());
 app.use('/v1', routes);
 app.use(errorHandler);
 
+if (process.env.NODE_ENV !== 'test') {
 connectToDB()
     .then(() => {
         app.listen(PORT, () => {
@@ -26,3 +27,5 @@ connectToDB()
         console.log(e.message);
         process.exit(1);
     });
+} else {app.listen(5000)}
+module.exports = app;

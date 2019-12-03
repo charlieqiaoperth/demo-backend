@@ -1,11 +1,5 @@
 const Drillholes = require('../models/drillholes');
-const {
-    DEFAULT_SEARCH_FIELD,
-    DEFAULT_PAGE_REQUESTED,
-    DEFAULT_PAGE_SIZE,
-    SORT_VALUE,
-    SORT_TYPE_ORDER
-} = require('../utils/constants')
+
 
 // generate new data of drill holes to database
 function addHoles() {      
