@@ -7,7 +7,7 @@ const connectToDB = require('./utils/database')
 const routes = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4500;
 const app = express();
 app.use(helmet());
 app.use(cors());
